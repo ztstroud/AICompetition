@@ -13,21 +13,21 @@ class Direction(Enum):
 class UnitType(Enum):
     """Defines the types of units that exist in the game."""
 
-    NONE = 0
+    NONE = None
 
-    PEASANT = 1
-    SPEARMAN = 2
-    KNIGHT = 3
-    BARON = 4
+    PEASANT = "peasant"
+    SPEARMAN = "spearman"
+    KNIGHT = "knight"
+    BARON = "baron"
 
-    CAPITAL = 5
-    FARM = 6
-    TOWER = 7
-    MAGICTOWER = 8
+    CAPITAL = "capital"
+    FARM = "farm"
+    TOWER = "tower"
+    MAGICTOWER = "magictower"
     
-    PINE = 9
-    PALM = 10
-    GRAVE = 11
+    PINE = "pine"
+    PALM = "palm"
+    GRAVE = "grave"
 
 class Unit:
     def __init__(self, type, canMove=True):
